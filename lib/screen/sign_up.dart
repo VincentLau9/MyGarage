@@ -25,7 +25,7 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BackGroundImage(image: 'asset/image/login_image.jpg'),
+        BackGroundImage(image: 'asset/auth/login_image.jpg'),
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(

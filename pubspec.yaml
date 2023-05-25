@@ -63,13 +63,14 @@ flutter:
 
 
   assets:
-    - asset/image/login_image.jpg
-    - asset/image/avatar.png
-    - asset/image/garage1.jpg
-    - asset/image/garage2.jpg
-    - asset/image/garage3.jpg
-    - asset/image/garage4.jpg
-    - asset/image/garage5.jpg
+    - asset/auth/login_image.jpg
+    - asset/auth/avatar.png
+    - asset/service/1.jpg
+    - asset/image/1.jpg
+    - asset/image/2.jpg
+    - asset/image/3.jpg
+    - asset/image/4.jpg
+    - asset/image/5.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

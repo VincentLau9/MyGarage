@@ -1,6 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:mygarage/screen/shopping_cart.dart';
+import 'package:mygarage/widget/ServiceItemSamples.dart';
 import 'package:mygarage/widget/app_icon.dart';
 
 class GarageDetail extends StatelessWidget {
@@ -12,20 +14,24 @@ class GarageDetail extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-
-
+            floating: false,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-
                 AppIcon(
                     iconColor: Colors.transparent,
                     backgroundColor: Colors.transparent,
                     icon: Icons.arrow_back, size: 25,
                   ),
-                AppIcon(iconColor: Colors.white,
-                    backgroundColor: Colors.transparent,
-                    icon: Icons.shopping_cart, size: 20),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).pushNamed(ShoppingCart.routeName);
+                  },
+                  child: AppIcon(iconColor: Colors.white,
+                        backgroundColor: Colors.transparent,
+                        icon: Icons.shopping_cart, size: 20),
+                ),
+
               ],
             ),
             bottom: PreferredSize(
@@ -50,7 +56,7 @@ class GarageDetail extends StatelessWidget {
             backgroundColor: Colors.transparent,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                "asset/image/garage1.jpg",
+                "asset/image/1.jpg",
                 width: double.maxFinite,
                 fit: BoxFit.cover,
               ),
@@ -59,17 +65,18 @@ class GarageDetail extends StatelessWidget {
          SliverToBoxAdapter(
            child: Column(
              children: [
-               Container(
-                 child: Text(
-                     "A gargae where you can fix and mantain your car."
-                         "Address: 2 Trần Hưng Đạo, phường 2, quận 1."
-                 ),
+               Text(
+                   "Garage tốt nhất ở gần bạn"
+               ),
+               Text(
+                 "2 Trần Hưng Đạo, phường 2, quận 5, TPHCM."
+               ),
+               SingleChildScrollView(
+                 child: ServiceItemSample(),
                ),
              ],
            ),
          ),
-          Container(
-          ),
         ],
       )
     );

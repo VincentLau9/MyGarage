@@ -41,7 +41,7 @@ class LoginPage extends StatelessWidget {
       //   ),
       // ),
 
-       BackGroundImage(image: 'asset/image/login_image.jpg'),
+       BackGroundImage(image: 'asset/auth/login_image.jpg'),
 
        Scaffold(
          backgroundColor: Colors.transparent,

@@ -46,7 +46,7 @@ class NearGarage extends StatelessWidget{
                             //alignment: Alignment.center,
                             margin: EdgeInsets.all(5),
                             child: Image.asset(
-                              'asset/image/garage1.jpg',
+                              'asset/image/1.jpg',
                             ),
                           ),
                           Text(
@@ -117,7 +117,7 @@ class NearGarage extends StatelessWidget{
                           //alignment: Alignment.center,
                           margin: EdgeInsets.all(5),
                           child: Image.asset(
-                            'asset/image/garage2.jpg',
+                            'asset/image/2.jpg',
                             height: 92,
                             width: 250,
                           ),
@@ -189,7 +189,7 @@ class NearGarage extends StatelessWidget{
                           //alignment: Alignment.center,
                           margin: EdgeInsets.all(5),
                           child: Image.asset(
-                            'asset/image/garage3.jpg',
+                            'asset/image/3.jpg',
                             height: 92,
                             width: 250,
                           ),
@@ -261,7 +261,7 @@ class NearGarage extends StatelessWidget{
                           //alignment: Alignment.center,
                           margin: EdgeInsets.all(5),
                           child: Image.asset(
-                            'asset/image/garage4.jpg',
+                            'asset/image/4.jpg',
                             height: 92,
                             width: 250,
                           ),
@@ -333,7 +333,7 @@ class NearGarage extends StatelessWidget{
                           //alignment: Alignment.center,
                           margin: EdgeInsets.all(5),
                           child: Image.asset(
-                            'asset/image/garage5.jpg',
+                            'asset/image/5.jpg',
                             height: 92,
                             width: 250,
                           ),
