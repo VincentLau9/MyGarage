@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mygarage/widget/Near_Garage.dart';
-import 'package:mygarage/widget/appbarwidget.dart';
+import 'package:mygarage/widget/AppbarWidget.dart';
 
 import '../widget/DrawerWidget.dart';
 
@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget{
       body: ListView(
         children:[
         AppBarWidget(),
-        SizedBox(height: 450,),
+        SizedBox(height: 450),
         NearGarage(),
         ],
       ),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mygarage/screen/homepage.dart';
 import 'package:mygarage/screen/sign_up.dart';
 
-import '../widget/backgroundimage.dart';
+import '../widget/BackgroundImage.dart';
 
 class LoginPage extends StatelessWidget {
   static const routeName = '/login';

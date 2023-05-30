@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mygarage/widget/app_icon.dart';
+import 'package:mygarage/widget/App_Icon.dart';
 
 class ServiceItemSample extends StatelessWidget {
   @override
@@ -99,6 +99,7 @@ class ServiceItemSample extends StatelessWidget {
             child: CustomScrollView(
               slivers: [
                 SliverAppBar(
+                  backgroundColor: Colors.transparent,
                   expandedHeight: 300,
                   floating: true,
                   automaticallyImplyLeading: false,
@@ -124,36 +125,29 @@ class ServiceItemSample extends StatelessWidget {
 
                     ],
                   ),
-                  //
-              flexibleSpace: Stack(
-                children: [
-                  Positioned(
-                      child: Image(
-                        fit: BoxFit.cover,
-                        image: NetworkImage(""),
-
-                      ),
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0),
-                  Positioned(
-                    child: Container(
-                      height: 30,
-                      decoration: BoxDecoration(
-                        color: Colors.lightBlue[100],
-                        borderRadius: BorderRadius.vertical(
-                          top: Radius.circular(50),
+                  flexibleSpace: FlexibleSpaceBar(
+                      background: ClipRRect(
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(25),
+                        topLeft: Radius.circular(25),
+                        ),
+                        child: Image.asset(
+                          "asset/service/1.jpg",
+                          width: double.maxFinite,
+                          fit: BoxFit.cover,
                         ),
                       ),
-                    ),
-                    bottom: -1,
-                    left: 0,
-                    right: 0,
                   ),
-                ],
-              ),
-            ),
+                ),
+                SliverToBoxAdapter(
+                  child: Column(
+                    children: [
+                      SingleChildScrollView(
+                        child: ServiceItemSample(),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           );

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:mygarage/screen/shopping_cart.dart';
 import 'package:mygarage/widget/ServiceItemSamples.dart';
-import 'package:mygarage/widget/app_icon.dart';
+import 'package:mygarage/widget/App_Icon.dart';
 
 class GarageDetail extends StatelessWidget {
   static const routeName = '/garagedetail';
